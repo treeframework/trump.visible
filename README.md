@@ -1,6 +1,6 @@
 # Visible
 
-The `visible` module simply hides content.
+The `visible` module simply displays content as block.
 
 ## Dependencies
 
