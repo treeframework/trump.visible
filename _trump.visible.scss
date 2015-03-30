@@ -1,0 +1,19 @@
+// *************************************
+//
+//   #VISIBLE
+//
+// *************************************
+
+// The visible module simply displays content as block.
+
+// Predefine the variables bellow in order to alter and enable specific features.
+$tree-visible-namespace: $tree-namespace !default;
+
+
+
+
+
+.#{$tree-visible-namespace}u-visible {
+    display: block !important;
+    visibility: visible !important;
+}

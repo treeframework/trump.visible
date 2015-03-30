@@ -1,0 +1,16 @@
+{
+  "name": "tree-visible",
+  "version": "0.1.0",
+  "homepage": "https://github.com/treeframework/trump.visible",
+  "author": "Ilia Kolev <info@iliakolev.com>",
+  "description": "The visible module simply displays content as block.",
+  "main": "_trump.visible.scss",
+  "keywords": [
+    "oocss",
+    "css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "tree-defaults": "~0.2.5"
+  }
+}
