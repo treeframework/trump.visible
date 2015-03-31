@@ -7,6 +7,8 @@ The `visible` module simply displays content as block.
 The `visible` module depends on one other module:
 
 * [settings.defaults](https://github.com/treeframework/settings.defaults)
+* [settings.responsive](https://github.com/treeframework/settings.responsive)
+* [tools.responsive](https://github.com/treeframework/tools.responsive)
 
 If you install the `visible` module using Bower, you will get these dependencies
 at the same time. If not using Bower, please be sure to install and `@import`
@@ -63,6 +65,13 @@ Basic usage of the `visible` module uses the required classes:
     <li>Bar</li>
     <li>Baz</li>
 </ul>
+```
+
+To turn responsive feature on, set switch to true (before you `@import` the file):
+
+```scss
+$tree-enable-visible--responsive:    true;
+@import "bower_components/tree-visible/trump.visible";
 ```
 
 ## Credits
