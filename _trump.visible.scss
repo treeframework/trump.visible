@@ -7,7 +7,9 @@
 // The visible module simply displays content as block.
 
 // Predefine the variables bellow in order to alter and enable specific features.
-$tree-visible-namespace: $tree-namespace !default;
+$tree-visible-namespace:            $tree-namespace !default;
+
+$tree-enable-visible--responsive:   false !default;
 
 
 
@@ -17,3 +19,30 @@ $tree-visible-namespace: $tree-namespace !default;
     display: block !important;
     visibility: visible !important;
 }
+
+
+
+
+
+@if $tree-enable-visible--responsive == true {
+
+    // Responsive visible classes.
+
+    // Loop over our breakpoints defined in _settings.responsive.scss
+    @each $breakpoint in $breakpoints {
+
+        // Get the name of the breakpoint.
+        $alias: nth($breakpoint, 1);
+
+        @include media-query($alias) {
+
+            .#{$tree-visible-namespace}u-visible-#{$alias} {
+                display: block !important;
+                visibility: visible !important;
+            }
+
+        } // Close media query.
+
+    } // Close breakpoints loop.
+
+} // Close visible--responsive @if.
