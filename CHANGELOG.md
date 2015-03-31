@@ -1,5 +1,9 @@
 # visible Changelog
 
-## [0.1.0] -2015-03-30
+## [0.2.0] - 2015-03-31
+
+* Add responsive classes ( off by default).
+
+## [0.1.0] - 2015-03-30
 
 * Initial release.
