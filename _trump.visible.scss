@@ -17,7 +17,6 @@ $tree-enable-visible--responsive:   false !default;
 
 .#{$tree-visible-namespace}u-visible {
     display: block !important;
-    visibility: visible !important;
 }
 
 
@@ -38,7 +37,6 @@ $tree-enable-visible--responsive:   false !default;
 
             .#{$tree-visible-namespace}u-visible-#{$alias} {
                 display: block !important;
-                visibility: visible !important;
             }
 
         } // Close media query.
