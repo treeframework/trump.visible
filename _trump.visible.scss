@@ -60,7 +60,6 @@ $tree-enable-visible--responsive:   false !default;
 // Blocks: `u-visible-[palm|lap|lap-and-up|portable|desk|retina]`
 // =============================================================================
 
-
 @if $tree-enable-visible--responsive == true {
 
     // Responsive visible classes.
