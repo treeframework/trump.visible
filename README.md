@@ -48,17 +48,29 @@ Basic usage of the `visible` module uses the required classes:
 
 ```html
 <ul class="u-visible">
-    <li>Foo</li>
-    <li>Bar</li>
-    <li>Baz</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
 </ul>
 ```
+
+## Options
 
 To turn responsive feature on, set switch to true (before you `@import` the file):
 
 ```scss
 $tree-enable-visible--responsive:    true;
 @import "bower_components/tree-visible/trump.visible";
+```
+
+For example:
+
+```html
+<ul class="u-visible@palm">
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+</ul>
 ```
 
 ## Credits
