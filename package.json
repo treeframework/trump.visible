@@ -1,7 +1,7 @@
 {
   "name": "tree-visible",
   "description": "The visible module simply displays content as block.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "bugs": {
     "url": "https://github.com/treeframework/trump.visible/issues"
