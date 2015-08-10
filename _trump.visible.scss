@@ -5,25 +5,25 @@
 // Description:   Simply displays content as block.
 //
 // Blocks:        `u-visible`
-//                `u-visible-palm`       // disabled by default
-//                `u-visible-lap`        // disabled by default
-//                `u-visible-lap-and-up` // disabled by default
-//                `u-visible-portable`   // disabled by default
-//                `u-visible-desk`       // disabled by default
-//                `u-visible-retina`     // disabled by default
+//                `u-visible@palm`       // disabled by default
+//                `u-visible@lap`        // disabled by default
+//                `u-visible@lap-and-up` // disabled by default
+//                `u-visible@portable`   // disabled by default
+//                `u-visible@desk`       // disabled by default
+//                `u-visible@retina`     // disabled by default
 //
 // Markup:
 //
 // <ul class="u-visible">
-//     <li>Foo</li>
-//     <li>Bar</li>
-//     <li>Baz</li>
+//     <li>...</li>
+//     <li>...</li>
+//     <li>...</li>
 // </ul>
 //
-// <ul class="u-visible-lap">
-//     <li>Foo</li>
-//     <li>Bar</li>
-//     <li>Baz</li>
+// <ul class="u-visible@lap">
+//     <li>...</li>
+//     <li>...</li>
+//     <li>...</li>
 // </ul>
 //
 // =============================================================================
@@ -59,7 +59,7 @@ $tree-enable-visible--responsive:   false !default;
 
 
 // =============================================================================
-// Blocks: `u-visible-[palm|lap|lap-and-up|portable|desk|retina]`
+// Blocks: `u-visible@[palm|lap|lap-and-up|portable|desk|retina]`
 // =============================================================================
 
 @if $tree-enable-visible--responsive == true {
@@ -74,7 +74,7 @@ $tree-enable-visible--responsive:   false !default;
 
         @include media-query($alias) {
 
-            .#{$tree-visible-namespace}u-visible-#{$alias} {
+            .#{$tree-visible-namespace}u-visible\@#{$alias} {
                 display: block !important;
             }
 
